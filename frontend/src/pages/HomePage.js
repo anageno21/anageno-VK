@@ -6,7 +6,7 @@ function HomePage() {
   useEffect(() => {
     console.log('Swiper initialization started for page-title-homepage-3');
     const swiper1 = new Swiper('.page-title-homepage-3 .swiper-container', {
-      loop: true, // Επαναφέρουμε το loop: true
+      loop: true,
       slidesPerView: 1,
       pagination: {
         el: '.pagination-page-title-home',
