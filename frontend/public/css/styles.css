@@ -7836,19 +7836,19 @@ div.section-therapists.tf-spacing-5 {
     font-size: 17px;
     line-height: 25px;
   }
-  /* Slider Styles (page-title-homepage-3) */
+/* Slider Styles (page-title-homepage-3) */
 .page-title-homepage-3 {
   position: relative;
   overflow: hidden;
 }
 
 .page-title-homepage-3 .swiper-container {
-  height: 350px !important;
+  height: 850px !important;
   width: 100% !important;
 }
 
 .page-title-homepage-3 .swiper-slide {
-  height: 350px !important;
+  height: 850px !important;
   width: 100% !important;
   position: relative;
 }
@@ -7856,24 +7856,8 @@ div.section-therapists.tf-spacing-5 {
 .page-title-homepage-3 img,
 .page-title-homepage-4 img {
   width: 100%;
-  height: 350px;
+  height: 850px;
   object-fit: cover;
-}
-
-@media (max-width: 1120px) {
-  .page-title-homepage-3 .swiper-container,
-  .page-title-homepage-3 .swiper-slide,
-  .page-title-homepage-3 img {
-    height: 300px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .page-title-homepage-3 .swiper-container,
-  .page-title-homepage-3 .swiper-slide,
-  .page-title-homepage-3 img {
-    height: 250px !important;
-  }
 }
 
 /* Overlay για καλύτερη αναγνωσιμότητα κειμένων */
@@ -7898,23 +7882,47 @@ div.section-therapists.tf-spacing-5 {
   bottom: 70px;
 }
 
-.page-title-homepage-3 .swiper-container {
-  height: 850px !important;
-  width: 100% !important;
+.page-title-homepage-3 .wrap-content,
+.page-title-homepage-4 .wrap-content {
+  max-width: 530px;
 }
 
-.page-title-homepage-3 .swiper-slide {
-  height: 850px !important;
-  width: 100% !important;
-  position: relative;
+.page-title-homepage-3 .heading,
+.page-title-homepage-4 .heading {
+  margin-bottom: 24px;
 }
 
-.page-title-homepage-3 img,
-.page-title-homepage-4 img {
-  width: 100%;
-  height: 850px;
-  object-fit: cover;
-  display: block !important; /* Εξασφαλίζει ότι οι εικόνες εμφανίζονται */
+.page-title-homepage-3 .heading .title,
+.page-title-homepage-4 .heading .title {
+  margin-bottom: 16px;
+}
+
+.page-title-homepage-3 .pagination-page-title-home,
+.page-title-homepage-4 .pagination-page-title-home {
+  position: absolute !important;
+  bottom: 40px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 20 !important;
+  display: flex !important;
+  gap: 12px !important;
+}
+
+.page-title-homepage-3 .pagination-page-title-home .swiper-pagination-bullet,
+.page-title-homepage-4 .pagination-page-title-home .swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.5 !important;
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+.page-title-homepage-3 .pagination-page-title-home .swiper-pagination-bullet-active,
+.page-title-homepage-4 .pagination-page-title-home .swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background: #D3C7A5 !important;
 }
 
 /* Overlay για καλύτερη αναγνωσιμότητα κειμένων */
