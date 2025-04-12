@@ -14,7 +14,7 @@ function Footer() {
                       id="logo_footer"
                       src="/images/logo/footer-logo.png"
                       data-retina="/images/logo/footer-logo@2x.png"
-                      alt=""
+                      alt="Anageno Logo"
                     />
                   </a>
                 </div>
@@ -23,7 +23,7 @@ function Footer() {
                 </p>
                 <ul className="footer-info">
                   <li>Office: 1234 Fashion Street, Suite 567, New York, United States</li>
-                  <li>Support 24/7: <a href="mailto:info@anageno.com">info@anageno.com</a></li>
+                  <li>Support 24/7: <a href="mailto:support@anageno.com">support@anageno.com</a></li>
                   <li>Call Us Now: 1-555-678-8888</li>
                 </ul>
                 <ul className="tf-social">
@@ -188,19 +188,19 @@ function Footer() {
                     <h6 className="title title-desktop">Our Therapists</h6>
                     <h6 className="title title-mobile">Our Therapists</h6>
                     <ul className="tf-collapse-content">
-                      <li><a href="/therapists-details">Annette Black</a></li>
-                      <li><a href="/therapists-details">Jane Cooper</a></li>
-                      <li><a href="/therapists-details">Brooklyn Simmons</a></li>
+                      <li><a href="/therapists-details.html">Annette Black</a></li>
+                      <li><a href="/therapists-details.html">Jane Cooper</a></li>
+                      <li><a href="/therapists-details.html">Brooklyn Simmons</a></li>
                     </ul>
                   </div>
                   <div className="footer-menu-list footer-col-block">
                     <h6 className="title title-desktop">Our Services</h6>
                     <h6 className="title title-mobile">Our Services</h6>
                     <ul className="tf-collapse-content">
-                      <li><a href="/service-details">Individual Counseling</a></li>
-                      <li><a href="/service-details">Family Therapy</a></li>
-                      <li><a href="/service-details">Couples Therapy</a></li>
-                      <li><a href="/service-details">Group Therapy</a></li>
+                      <li><a href="/service-details.html">Individual Counseling</a></li>
+                      <li><a href="/service-details.html">Family Therapy</a></li>
+                      <li><a href="/service-details.html">Couples Therapy</a></li>
+                      <li><a href="/service-details.html">Group Therapy</a></li>
                     </ul>
                   </div>
                 </div>
@@ -208,44 +208,43 @@ function Footer() {
                   <h6 className="title title-desktop">Subscribe Newsletter</h6>
                   <h6 className="title title-mobile">Subscribe Newsletter</h6>
                   <div className="tf-collapse-content">
-                    <form
-                      className="form-send-email"
-                      method="POST"
-                      data-netlify="true"
-                      name="newsletter-form"
-                    >
-                      <input type="hidden" name="form-name" value="newsletter-form" />
-                      <fieldset>
-                        <input
-                          type="email"
-                          placeholder="Your email address"
-                          name="subscribeEmail"
-                          aria-required="true"
-                          required
-                        />
-                      </fieldset>
-                      <div className="button-submit">
-                        <button type="submit">
-                          <i className="icon-PaperPlaneTilt"></i>
-                        </button>
+                    <form className="form-send-email" action="#" id="subscribe-form" acceptCharset="utf-8" method="post" data-mailchimp="true">
+                      <div id="subscribe-content">
+                        <fieldset>
+                          <input
+                            type="email"
+                            id="subscribe-email"
+                            placeholder="Your email address"
+                            aria-required="true"
+                            required
+                          />
+                        </fieldset>
+                        <div className="button-submit">
+                          <button type="button" id="subscribe-button">
+                            <i className="icon-PaperPlaneTilt"></i>
+                          </button>
+                        </div>
                       </div>
+                      <div id="subscribe-msg"></div>
                     </form>
-                    <p>Please sign up to follow the latest news and events from us, we promise not to spam your inbox.</p>
+                    <p>
+                      Please sign up to follow the latest news and events from us, we promise not to spam your inbox.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="footer-bottom">
               <p>
-                Copyright © 2024 Healingy By{' '}
-                <a href="https://themeforest.net/user/themesflat" target="_blank" rel="noopener noreferrer">
+                Copyright © 2024 Anageno By{' '}
+                <a href="https://themeforest.net/user/themesflat" target="_blank">
                   ThemesFlat.com
                 </a>{' '}
                 All rights reserved
               </p>
               <ul className="content-right">
-                <li><a href="/shop">Terms Of Services</a></li>
-                <li><a href="/contact-us">Privacy Policy</a></li>
+                <li><a href="/shop.html">Terms Of Services</a></li>
+                <li><a href="/contact-us.html">Privacy Policy</a></li>
               </ul>
             </div>
           </div>

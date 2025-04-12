@@ -1,121 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
+import PageTitleContact from '../components/PageTitleContact';
+import ContactSection from '../components/ContactSection';
 
 function ContactPage() {
-  const [formStatus, setFormStatus] = useState(null); // Κατάσταση για την απόκριση της φόρμας
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormStatus('Submitting...'); // Εμφάνιση κατάστασης υποβολής
-
-    // Το Netlify Forms θα χειριστεί την υποβολή όταν είναι στο Netlify
-    // Εδώ μπορώ να προσθέσω έναν έλεγχο για τοπική απόκριση
-    setTimeout(() => {
-      setFormStatus('Form submitted! Check your Netlify Forms dashboard.');
-    }, 1000);
-  };
-
   return (
-    <div className="main-content">
-      <section className="section-contact">
-        <div className="tf-container">
-          <div className="row">
-            <div className="col-12">
-              <div className="wrap-content">
-                <div className="box-contact">
-                  <div className="heading-section text-start">
-                    <p className="text-2 sub wow fadeInUp" data-wow-duration="1000" data-wow-delay="0s">
-                      Book a Consultation
-                    </p>
-                    <h3 className="wow fadeInUp" data-wow-duration="1000" data-wow-delay="0s">
-                      Free Consultation - Begin Your Healing Journey
-                    </h3>
-                    <p className="description text-1 lh-30 wow fadeInUp" data-wow-duration="1000" data-wow-delay="0s">
-                      Connect with a dedicated specialist today and take the first step towards a healthier, more fulfilling life.
-                    </p>
-                  </div>
-                  <ul className="list-info">
-                    <li className="wow fadeInUp" data-wow-duration="1000" data-wow-delay="0s">
-                      <i className="icon-Envelope"></i> <a href="mailto:info@anageno.com">info@anageno.com</a>
-                    </li>
-                    <li className="wow fadeInUp" data-wow-duration="1000" data-wow-delay="0s">
-                      <i className="icon-PhoneCall"></i>+30 123 456 7890
-                    </li>
-                    <li className="wow fadeInUp" data-wow-duration="1000" data-wow-delay="0s">
-                      <i className="icon-MapPin"></i>123 Therapy Street, Athens, Greece
-                    </li>
-                  </ul>
-                  <a href="#" className="tf-btn-link z-5 wow fadeInUp" data-wow-duration="1000" data-wow-delay="0s">
-                    <span data-text="Open map">Open map</span>
-                    <i className="icon-ArrowRight"></i>
-                  </a>
-                </div>
-                <form
-                  className="form-consultation wow fadeInRight"
-                  data-wow-duration="1000"
-                  data-wow-delay="0s"
-                  method="POST"
-                  data-netlify="true"
-                  name="contact-form"
-                  onSubmit={handleSubmit} // Προσθήκη χειριστή υποβολής
-                >
-                  <input type="hidden" name="form-name" value="contact-form" />
-                  <h4 className="mb-20 text-center">Get A Free Consultation</h4>
-                  <fieldset className="name">
-                    <input
-                      type="text"
-                      name="name"
-                      className="tf-input style-1"
-                      placeholder="Your Name*"
-                      tabIndex="2"
-                      aria-required="true"
-                      required
-                    />
-                  </fieldset>
-                  <fieldset className="phone">
-                    <input
-                      type="tel" // Αλλαγή σε type="tel" για καλύτερη συμβατότητα με τηλέφωνα
-                      name="phone"
-                      className="tf-input style-1"
-                      placeholder="Phone Number*"
-                      tabIndex="2"
-                      aria-required="true"
-                      required
-                    />
-                  </fieldset>
-                  <div className="select-custom mb-20">
-                    <select id="service" name="service" required> {/* Αλλαγή name σε "service" */}
-                      <option value="">Choose a Service*</option>
-                      <option value="Individual Counseling">Individual Counseling</option>
-                      <option value="Family Therapy">Family Therapy</option>
-                      <option value="Couples Therapy">Couples Therapy</option>
-                      <option value="Group Therapy">Group Therapy</option>
-                      <option value="Child & Adolescent Therapy">Child & Adolescent Therapy</option>
-                      <option value="Trauma Counseling">Trauma Counseling</option>
-                    </select>
-                  </div>
-                  <fieldset className="message">
-                    <textarea
-                      id="message"
-                      className="tf-input"
-                      name="message"
-                      rows="4"
-                      placeholder="Your Message*"
-                      tabIndex="4"
-                      aria-required="true"
-                      required
-                    />
-                  </fieldset>
-                  <button className="tf-btn style-default btn-color-secondary pd-40 boder-8 send-wrap" type="submit">
-                    <span>Submit</span>
-                  </button>
-                  {formStatus && <p className="form-status">{formStatus}</p>} {/* Εμφάνιση κατάστασης */}
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    <>
+      <PageTitleContact />
+      <ContactSection />
+    </>
   );
 }
 
